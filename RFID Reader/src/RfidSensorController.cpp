@@ -1,3 +1,7 @@
+// ------------------------------------------------------------
+//  Made by Kristoffer Kirkerød — 2025
+// ------------------------------------------------------------
+
 #include "RfidSensorController.h"
 
 // Konstruktør – settes opp når objektet lages

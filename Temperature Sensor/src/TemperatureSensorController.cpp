@@ -1,3 +1,7 @@
+// ------------------------------------------------------------
+//  Made by Kristoffer Kirkerød — 2025
+// ------------------------------------------------------------
+
 #include "TemperatureSensorController.h"
 
 // Konstruktør – settes opp når objektet lages

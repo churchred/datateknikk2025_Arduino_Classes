@@ -1,3 +1,7 @@
+// ------------------------------------------------------------
+//  Made by Kristoffer Kirkerød — 2025
+// ------------------------------------------------------------
+
 #include "ButtonController.h"
 
 ButtonController::ButtonController(int pin) {

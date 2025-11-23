@@ -1,3 +1,7 @@
+// ------------------------------------------------------------
+//  Made by Kristoffer Kirkerød — 2025
+// ------------------------------------------------------------
+
 #include <Arduino.h>
 #include <OledScreenController.h>
 #include <Wire.h>

@@ -1,3 +1,7 @@
+// ------------------------------------------------------------
+//  Made by Kristoffer Kirkerød — 2025
+// ------------------------------------------------------------
+
 #ifndef OLEDSCREENCONTROLLER_H
 #define OLEDSCREENCONTROLLER_H
 

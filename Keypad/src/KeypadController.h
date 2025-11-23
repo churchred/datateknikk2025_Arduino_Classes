@@ -1,3 +1,7 @@
+// ------------------------------------------------------------
+//  Made by Kristoffer Kirkerød — 2025
+// ------------------------------------------------------------
+
 #ifndef KEYPADCONTROLLER_H
 #define KEYPADCONTROLLER_H
 

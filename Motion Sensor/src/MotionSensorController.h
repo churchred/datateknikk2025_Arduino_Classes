@@ -1,3 +1,7 @@
+// ------------------------------------------------------------
+//  Made by Kristoffer Kirkerød — 2025
+// ------------------------------------------------------------
+
 #ifndef MOTIONSENSORCONTROLLER_H
 #define MOTIONSENSORCONTROLLER_H
 

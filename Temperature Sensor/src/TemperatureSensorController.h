@@ -1,3 +1,7 @@
+// ------------------------------------------------------------
+//  Made by Kristoffer Kirkerød — 2025
+// ------------------------------------------------------------
+
 #ifndef TEMPERATURESENSORCONTROLLER_H
 #define TEMPERATURESENSORCONTROLLER_H
 

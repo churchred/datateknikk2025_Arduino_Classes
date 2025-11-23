@@ -1,3 +1,7 @@
+// ------------------------------------------------------------
+//  Made by Kristoffer Kirkerød — 2025
+// ------------------------------------------------------------
+
 #ifndef LIGHTSENSORCONTROLLER_H
 #define LIGHTSENSORCONTROLLER_H
 

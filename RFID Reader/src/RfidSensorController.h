@@ -1,3 +1,7 @@
+// ------------------------------------------------------------
+//  Made by Kristoffer Kirkerød — 2025
+// ------------------------------------------------------------
+
 #ifndef RFID_SENSOR_CONTROLLER_H
 #define RFID_SENSOR_CONTROLLER_H
 

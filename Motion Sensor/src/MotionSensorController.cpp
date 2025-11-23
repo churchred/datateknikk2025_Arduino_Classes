@@ -1,3 +1,7 @@
+// ------------------------------------------------------------
+//  Made by Kristoffer Kirkerød — 2025
+// ------------------------------------------------------------
+
 #include "MotionSensorController.h"
 
 MotionSensorController::MotionSensorController(int pin) {

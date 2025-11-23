@@ -1,3 +1,8 @@
+// ------------------------------------------------------------
+//  Made by Kristoffer Kirkerød — 2025
+// ------------------------------------------------------------
+
+
 #ifndef BUTTONCONTROLLER_H
 #define BUTTONCONTROLLER_H
 

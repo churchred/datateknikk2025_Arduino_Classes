@@ -1,3 +1,7 @@
+// ------------------------------------------------------------
+//  Made by Kristoffer Kirkerød — 2025
+// ------------------------------------------------------------
+
 #ifndef SOILSENSORCONTROLLER_H
 #define SOILSENSORCONTROLLER_H
 
