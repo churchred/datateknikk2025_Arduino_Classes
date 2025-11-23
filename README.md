@@ -13,7 +13,7 @@ All controllers are designed to be user-friendly.
 - **Button**
 - **Light Sensor** – LDR
 - **Motion Sensor** – PIR HC-SR501
-- **Soil Sensor**
+- **Soil Sensor** - SparkFun Soil Moisture Sensor
 - **Temperature Sensor** – BME280
 - **Keypad** – 3x4 Keypad
 
