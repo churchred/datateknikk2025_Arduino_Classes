@@ -35,7 +35,7 @@ int RfidSensorController::readCard() {
   // Prints the code if one is present
   if (uidLength != 0){
     Serial.print("Code: ");
-    Serial.println(getCode(uid, uidLength));
+    getCode(uid, uidLength);
   }
 
   // Stop communication with this card
