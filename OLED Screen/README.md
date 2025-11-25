@@ -9,12 +9,15 @@ The display uses the default I2C address `0x3C` and a 128×64 resolution.
 
 ## Available Functions
 
+
 | Function | Description |
 |----------|-------------|
 | `OledScreenController()` | Creates the OLED display controller. |
 | `void startDisplay()` | Initializes the display. Must be called in `setup()`. |
 | `void clear()` | Clears the display and resets the cursor. |
-| `void draw(String text, int cursorY, bool update = false)` | Draws text on the chosen line. `cursorY` is the line number. `update=true` refreshes the screen immediately. |
+| `void draw(const char* text, int cursorX, int cursorY, bool update = false)` | Draws text at X/Y position. `cursorY` is the line number. |
+| `void draw(int number, int cursorX, int cursorY, bool update = false)` | Draws an integer at X/Y position. |
+| `void draw(float number, int cursorX, int cursorY, bool update = false)` | Draws a float at X/Y position with 2 decimals. |
 
 ---
 
@@ -60,11 +63,12 @@ void setup() {
 
 void loop() {
 
-    // Draw text on line 1 without updating the screen yet
-    screen.draw("Line 1 text", 1);
+    // Draw text at X=0, line 1
+    screen.draw("Temp:", 0, 1);
 
-    // Update the screen after drawing on multiple lines
-    screen.draw("Line 2 text", 2, true);
+    // Draw number next to it at X=40, same line
+    // Some trial and error necesarry to find right X-cords
+    screen.draw(23, 40, 1, true);
 
     delay(1000);
 }

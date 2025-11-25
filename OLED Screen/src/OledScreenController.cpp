@@ -35,6 +35,11 @@ void OledScreenController::clear() {
     setCursor(0, 0);
 }
 
+// Fucntion to clear the screen
+void OledScreenController::update() {
+    display();
+}
+
 // If we send in text strings
 void OledScreenController::draw(const char* text, int x, int cursorY, bool update) {
 
@@ -46,7 +51,7 @@ void OledScreenController::draw(const char* text, int x, int cursorY, bool updat
 
     // If update is true, then update the screen
     if (update) {
-        display();
+        this->update();
     }
 }
 
@@ -68,6 +73,7 @@ void OledScreenController::draw(int number, int x, int cursorY, bool update) {
 
 void OledScreenController::draw(float number, int x, int cursorY, bool update) {
 
+    // Buffr to store chars (10 to be safe)
     char buffer[10];
 
     // Floats to C-String. Min 1 value before decimal-point, and its auto limited to 2 decimal points

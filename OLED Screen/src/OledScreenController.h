@@ -31,6 +31,9 @@ public:
     // Clears the screen
     void clear();
 
+    // Updates the screen. Can also be used draw, by sending true.
+    void update();
+
     // Draw text (OVERLOADED)
     void draw(const char* text, int cursorX, int cursorY, bool update = false);
 
