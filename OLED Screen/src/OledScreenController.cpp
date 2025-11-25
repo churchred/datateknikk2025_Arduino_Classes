@@ -20,7 +20,7 @@ void OledScreenController::startDisplay() {
     }
 
     // Starts up the screen
-    Wire.beginTransmission(OLED_ADDR);
+    //Wire.beginTransmission(OLED_ADDR);
     Serial.println(F("OLED is operational!"));
 
     // Size and color are needed for the screen to work
@@ -29,25 +29,51 @@ void OledScreenController::startDisplay() {
     clearDisplay();
 }
 
-
-void OledScreenController::draw(String text, int cursorY, bool update = false) {
-
-    // Draws on the correct line
-    // 8 is the height of 1 pixel text
-    setCursor(0, cursorY*8*textSize);
-
-    // What to write
-    println(text);
-
-    // If we want to update
-    if (update) {
-        display();
-    }
-
-}
-
 // Fucntion to clear the screen
 void OledScreenController::clear() {
     clearDisplay();
     setCursor(0, 0);
+}
+
+// If we send in text strings
+void OledScreenController::draw(const char* text, int x, int cursorY, bool update) {
+
+    // cursorY * 8 because text height = 8px
+    setCursor(x, cursorY * 8 * textSize);
+
+    // Prints the text onto the screen at the cursor location
+    println(text);
+
+    // If update is true, then update the screen
+    if (update) {
+        display();
+    }
+}
+
+// ------------------ 2) INTEGER ------------------
+
+void OledScreenController::draw(int number, int x, int cursorY, bool update) {
+
+    // BUffer to store chars (8 to be safe)
+    char buffer[8];
+
+    // integer -> char*
+    itoa(number, buffer, 10);
+
+    // Call the draw func again, just this time we send C-strings
+    draw(buffer, x, cursorY, update);
+}
+
+// ------------------ 3) FLOAT ------------------
+
+void OledScreenController::draw(float number, int x, int cursorY, bool update) {
+
+    char buffer[10];
+
+    // Floats to C-String. Min 1 value before decimal-point, and its auto limited to 2 decimal points
+    dtostrf(number, 1, 2, buffer);
+
+
+    // Call the draw func again, just this time we send C-strings
+    draw(buffer, x, cursorY, update);
 }

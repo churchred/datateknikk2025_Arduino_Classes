@@ -31,8 +31,14 @@ public:
     // Clears the screen
     void clear();
 
-    // Draws on the screen
-    void draw(String text, int cursorY, bool update = false);
+    // Draw text (OVERLOADED)
+    void draw(const char* text, int cursorX, int cursorY, bool update = false);
+
+    // Draw int (OVERLOADED)
+    void draw(int number, int cursorX, int cursorY, bool update = false);
+
+    // Draw float (OVERLOADED)
+    void draw(float number, int cursorX, int cursorY, bool update = false);
 
 };
 
